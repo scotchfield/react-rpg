@@ -1,0 +1,31 @@
+{
+  "name": "react-rpg",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "author": "scotchfield",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scotchfield/react-rpg.git"
+  },
+  "license": "GPL-2.0",
+  "description": "React RPG",
+  "dependencies": {
+    "react": "^0.14.5",
+    "react-dom": "0.14.0",
+    "react-redux": "4.0.0",
+    "redux": "3.0.4"
+  },
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-core": "^6.3.26",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-loader": "^6.2.0",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.23.0",
+    "webpack": "^1.12.9"
+  }
+}
