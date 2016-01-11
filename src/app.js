@@ -2,6 +2,9 @@ import React from 'react'
 import { render } from 'react-dom'
 import { browserHistory, Router, Route, Link } from 'react-router'
 
+import Character from './components/character'
+import Dungeon from './components/dungeon'
+
 class App extends React.Component {
 	render () {
 		return (
@@ -20,33 +23,6 @@ class App extends React.Component {
 
 App.title = 'React RPG'
 App.path = '/'
-
-class Character extends React.Component {
-	render () {
-		return (
-			<div className="Character">
-				<h2>Character</h2>
-			</div>
-		)
-	}
-}
-
-Character.title = 'Character'
-Character.path = '/character'
-
-class Dungeon extends React.Component {
-	render () {
-		return (
-			<div className="Dungeon">
-				<h2>Dungeon</h2>
-			</div>
-		)
-	}
-}
-
-Dungeon.title = 'Dungeon'
-Dungeon.path = '/dungeon'
-
 
 
 render((
