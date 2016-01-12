@@ -2,10 +2,11 @@ import React from 'react'
 
 class AttributeList extends React.Component {
 	render () {
-		console.log( this.props.data );
 		return (
 			<ul>
-				<li>AttributeList</li>
+				{ Object.keys( this.props.data ).map((key) => {
+					return <li key={ key }>{ key }: { this.props.data[key] }</li>
+				}) }
 			</ul>
 		)
 	}
