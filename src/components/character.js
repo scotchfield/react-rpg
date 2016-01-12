@@ -1,10 +1,21 @@
 import React from 'react'
 
+import AttributeList from './attributelist'
+import GearList from './gearlist'
+
 class Character extends React.Component {
+	constructor (props) {
+		super(props);
+	}
 	render () {
 		return (
 			<div className="Character">
-				<h2>Character</h2>
+				<h2>{ this.props.name }</h2>
+				<h3>Level { this.props.level }</h3>
+				<h4>Attributes</h4>
+				<AttributeList data={ this.props.attributes } />
+				<h4>Gear</h4>
+				<GearList data={ this.props.gear } />
 			</div>
 		)
 	}
@@ -12,5 +23,12 @@ class Character extends React.Component {
 
 Character.title = 'Character'
 Character.path = '/character'
+
+Character.defaultProps = {
+	name: 'Name',
+	level: 0,
+	attributes: { strength: 1, dexterity: 1, intelligence: 1 },
+	gear: [ { name: 'Old Clothes', modifiers: { strength: 0 } } ]
+};
 
 export default Character
