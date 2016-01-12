@@ -12,4 +12,6 @@ class AttributeList extends React.Component {
 	}
 }
 
+AttributeList.propTypes = { data: React.PropTypes.object.isRequired }
+
 export default AttributeList

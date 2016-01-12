@@ -11,4 +11,6 @@ class GearList extends React.Component {
 	}
 }
 
+GearList.propTypes = { data: React.PropTypes.array.isRequired }
+
 export default GearList
