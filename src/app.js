@@ -2,8 +2,8 @@ import React from 'react'
 import { render } from 'react-dom'
 import { browserHistory, Router, Route, Link } from 'react-router'
 
-import Character from './components/character'
-import Dungeon from './components/dungeon'
+import Character from './components/Character'
+import Dungeon from './components/Dungeon'
 
 class App extends React.Component {
 	render () {

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import AttributeList from './attributelist'
-import GearList from './gearlist'
+import AttributeList from './AttributeList'
+import GearList from './GearList'
 
 class Character extends React.Component {
 	constructor (props) {

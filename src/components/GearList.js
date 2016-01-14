@@ -1,6 +1,6 @@
 import React from 'react'
 
-import AttributeList from './attributelist'
+import AttributeList from './AttributeList'
 
 class GearList extends React.Component {
 	getModifiers ( modifiers ) {
